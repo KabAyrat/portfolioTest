@@ -5,6 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio || main</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero {
+      position: relative;
+      background-image: url('/src/meOnRiver2.jpg');
+      background-size:cover;
+      background-position: center;
+      height: 100vh;
+      color: white;
+    }
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .hero-content {
+      max-width: 600px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.25rem;
+    }
+  </style>
 </head>
 <body>
   <!-- Навигационная панель -->
@@ -38,11 +70,12 @@
   </nav>
 
   <!-- Главная страница -->
-  <section id="home" class="container">
-    <div class="row">
-      <div class="col">
+  <section id="home" class="hero">
+    <div class="hero-overlay">
+      <div class="hero-content">
         <h1>Добро пожаловать в мое портфолио!</h1>
-        <p>Краткое представление и приветствие.</p>
+        <p>Я веб-разработчик с навыками работы в HTML, CSS, JavaScript, React, и других технологиях.</p>
+        <a href="about.html" class="btn btn-primary">Узнать больше обо мне</a>
       </div>
     </div>
   </section>
