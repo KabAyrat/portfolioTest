@@ -3,10 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio || about me</title>
+  <title>Portfolio || My Skills</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
+
+
+  <style>
+    .skill {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .skill-icon {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
+
   <!-- Навигационная панель -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="index.html">Ayrat Kabirov</a>
@@ -37,15 +52,81 @@
     </div>
   </nav>
 
-  <!-- Главная страница -->
-  <section id="home" class="container">
+  <!-- Раздел навыков -->
+  <section id="skills" class="container">
     <div class="row">
-      <div class="col">
-        <h1>Добро пожаловать в мое портфолио!</h1>
-        <p>Краткое представление и приветствие.</p>
+      <div class="col-12">
+        <h2 class="text-center mt-5">Мои навыки</h2>
+        <p class="text-center">Здесь представлены технологии, которыми я владею.</p>
+      </div>
+    </div>
+    <div class="row">
+      <!-- HTML -->
+      <div class="col-sm-6 col-md-4 skill">
+        <div class="skill-icon">          
+            <i class="devicon-html5-plain"></i>
+        </div>
+        <h3>HTML</h3>
+      </div>
+      <!-- CSS -->
+      <div class="col-sm-6 col-md-4 skill">
+        <div class="skill-icon">
+            <i class="devicon-css3-plain"></i> 
+        </div>
+        <h3>CSS</h3>
+      </div>
+      <!-- JavaScript -->
+      <div class="col-sm-6 col-md-4 skill">
+        <div class="skill-icon">          
+            <i class="devicon-javascript-plain"></i>
+        </div>
+        <h3>JavaScript</h3>
+      </div>
+      <!-- React -->
+      <div class="col-sm-6 col-md-4 skill">
+        <div class="skill-icon">
+            <i class="devicon-react-original"></i>
+        </div>
+        <h3>React</h3>
+      </div>
+      <!-- Git -->
+      <div class="col-sm-6 col-md-4 skill">
+        <div class="skill-icon">
+            <i class="devicon-git-plain"></i>
+        </div>
+        <h3>Git</h3>
+      </div>
+      <!-- Figma -->
+      <div class="col-sm-6 col-md-4 skill">
+        <div class="skill-icon">
+            <i class="devicon-figma-plain"></i>
+        </div>
+        <h3>Figma</h3>
+      </div>
+      
+      <div class="col-sm-6 col-md-4 skill">
+        <div class="skill-icon">
+          <i class="devicon-typescript-plain"></i>
+        </div>
+        <h3>TypeScript</h3>
+      </div>
+    <!-- Bootstrap -->
+      <div class="col-sm-6 col-md-4 skill">
+        <div class="skill-icon">
+            <i class="devicon-bootstrap-plain"></i>
+        </div>
+        <h3>Bootstrap</h3>
+      </div>
+      <!-- MySQL -->
+      <div class="col-sm-6 col-md-4 skill">
+        <div class="skill-icon">
+            <i class="devicon-mysql-original"></i>
+        </div>
+        <h3>MySQL</h3>
       </div>
     </div>
   </section>
+
 
   <!-- Подключение Bootstrap JavaScript и зависимостей -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
