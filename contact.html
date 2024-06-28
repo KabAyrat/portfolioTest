@@ -5,6 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio || contact</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .container {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    .form-group label {
+      font-weight: bold;
+    }
+    .form-control {
+      border-radius: 0;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border: none;
+      border-radius: 0;
+    }
+    .list-unstyled {
+      list-style: none;
+      padding: 0;
+    }
+    .list-unstyled li {
+      margin-bottom: 10px;
+    }
+  </style>
+  
 </head>
 <body>
   <!-- Навигационная панель -->
@@ -37,12 +62,40 @@
     </div>
   </nav>
 
-  <!-- Главная страница -->
-  <section id="home" class="container">
+  <section id="contact" class="container">
     <div class="row">
-      <div class="col">
-        <h1>Добро пожаловать в мое портфолио!</h1>
-        <p>Краткое представление и приветствие.</p>
+      <div class="col-12">
+        <h2 class="text-center mt-5">Связь со мной</h2>
+        <p class="text-center">Я всегда открыт для новых возможностей и сотрудничества. Свяжитесь со мной, используя форму ниже, или через социальные сети и электронную почту.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <form id="contact-form" action="https://formspree.io/f/mwpeegvy" method="POST">
+          <div class="form-group">
+            <label for="name">Имя</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Электронная почта</label>
+            <input type="email" class="form-control" id="email" name="_replyto" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Сообщение</label>
+            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Отправить</button>
+        </form>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-12 text-center">
+        <h3>Или свяжитесь со мной через</h3>
+        <ul class="list-unstyled">
+          <li>Email: <a href="mailto:kabirov.ayrat2004@gmail.com">kabirov.ayrat2004@gmail.com</a></li>
+          <!-- <li>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></li> -->
+          <li>GitHub: <a href="https://github.com/KabAyrat" target="_blank">github.com/KabAyrat</a></li>
+        </ul>
       </div>
     </div>
   </section>

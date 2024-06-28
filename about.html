@@ -5,15 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio || My Skills</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-    <style>
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />  
+  <style>
     .skill {
       text-align: center;
       margin: 20px 0;
     }
     .skill-icon {
-      font-size: 40px;
+      font-size: 50px;
       margin-bottom: 10px;
+    }
+    .about-photo {
+      max-width: 100%;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    @media (min-width: 768px) {
+      .about-photo {
+        float: right;
+        margin-top: 80px;
+        margin-right: 40px;
+        max-width: 200px;
+      }
+    }
+    .about-section {
+      margin: 20px 0;
     }
   </style>
 </head>
@@ -52,6 +68,7 @@
   <section id="about" class="container">
     <div class="row">
       <div class="col-12">
+        <img src="/src/myPhoto.jpg" alt="Ayrat Kabirov" class="about-photo">
         <h2 class="text-center mt-5">Обо мне</h2>
         <p class="text-center">
         Привет! Меня зовут Айрат,
