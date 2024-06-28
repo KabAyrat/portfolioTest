@@ -5,6 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio || portfolio</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .portfolio-item {
+      margin-bottom: 30px;
+    }
+    .portfolio-img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .portfolio-description {
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
   <!-- Навигационная панель -->
@@ -34,6 +49,40 @@
       </ul>
     </div>
   </nav>
+  <section id="portfolio" class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-center mt-5">Мои проекты</h2>
+        <p class="text-center">Здесь представлены некоторые из моих работ.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Пример проекта -->
+      <div class="col-sm-6 col-md-4 portfolio-item">
+        <img src="/src/SimplyRecipes.jpg" alt="Проект 1" class="portfolio-img">
+        <h3 class="text-center">SimplyRecipes</h3>
+        <p class="portfolio-description text-center">
+            Данный проект выполнял в качестве выпускной квалификационной работы. Это веб-сайт разработан с использованием HTML, CSS, JS и PHP.
+        </p>
+        <div class="text-center">
+          <a href="https://github.com/KabAyrat/SimplyRecipes" class="btn btn-primary">Посмотреть на GitHub</a>
+        </div>
+      </div>
+      
+      <!-- Еще один пример проекта -->
+      <div class="col-sm-6 col-md-4 portfolio-item">
+        <img src="/src/portfolio.jpg" alt="Проект 2" class="portfolio-img">
+        <h3 class="text-center">Личный сайт</h3>
+        <p class="portfolio-description text-center">
+            Данный сайт разрабатывался как личное портфолио. К слову вы сейчас находитесь на это м сайте:)
+        </p>
+        <div class="text-center">
+          <a href="https://github.com/KabAyrat/portfolioTest" class="btn btn-primary">Посмотреть на GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
