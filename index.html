@@ -4,60 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio || main</title>
+  <link rel="stylesheet" href="/css/main.css">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    .hero {
-      position: relative;
-      background-image: url('/src/meOnRiver2.jpg');
-      background-size:cover;
-      background-position: center;
-      height: 100vh;
-      color: white;
-    }
-    .hero-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.5);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-    .hero-content {
-      max-width: 600px;
-    }
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-    .hero p {
-      font-size: 1.25rem;
-    }
-    .loader {
-      border: 16px solid #f3f3f3;
-      border-top: 16px solid #3498db;
-      border-radius: 50%;
-      width: 120px;
-      height: 120px;
-      animation: spin 2s linear infinite;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
 
-    @keyframes spin {
-      0% { transform: translate(-50%, -50%) rotate(0deg); }
-      100% { transform: translate(-50%, -50%) rotate(360deg); }
-    }
-
-    .content {
-      display: none;
-    }
-  </style>
 </head>
 <body>
     <div class="loader"></div>
@@ -106,14 +55,7 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-
-      setTimeout(function() {
-        document.querySelector(".loader").style.display = "none";
-        document.querySelector(".content").style.display = "block";
-      }, 1000);
-    });
+  <script src="/js/script.js">
   </script>
 </body>
 </html>
