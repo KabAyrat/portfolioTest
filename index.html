@@ -36,9 +36,32 @@
     .hero p {
       font-size: 1.25rem;
     }
+    .loader {
+      border: 16px solid #f3f3f3;
+      border-top: 16px solid #3498db;
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      animation: spin 2s linear infinite;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    @keyframes spin {
+      0% { transform: translate(-50%, -50%) rotate(0deg); }
+      100% { transform: translate(-50%, -50%) rotate(360deg); }
+    }
+
+    .content {
+      display: none;
+    }
   </style>
 </head>
 <body>
+    <div class="loader"></div>
+    <div class="content">
   <!-- Навигационная панель -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="index.html">Ayrat Kabirov</a>
@@ -77,10 +100,20 @@
       </div>
     </div>
   </section>
+  </div>
 
   <!-- Подключение Bootstrap JavaScript и зависимостей -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+
+      setTimeout(function() {
+        document.querySelector(".loader").style.display = "none";
+        document.querySelector(".content").style.display = "block";
+      }, 1000);
+    });
+  </script>
 </body>
 </html>
